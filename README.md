@@ -15,3 +15,16 @@ Single object tracking in satellite videos is inherently challenged by small tar
 ## Results
 
 Results can be downloaded from: [Google Drive](https://drive.google.com/drive/folders/1wA-kQ_2gJe4dtK84B_VLtATMBdB7k74U?usp=drive_link)
+
+## Citation
+
+If you find this repository/work helpful in your research, welcome to cite our paper:
+
+```bibtex
+@article{wen2026siamgm,
+  title={{SiamGM: Siamese Geometry-Aware and Motion-Guided Network for Real-Time Satellite Video Object Tracking}},
+  author={Zixiao Wen and Zhen Yang and Jiawei Li and Xiantai Xiang and Guangyao Zhou and Yuxin Hu and Yuhan Liu},
+  journal={arXiv preprint arXiv:2603.07564},
+  year={2026}
+}
+```
