@@ -23,7 +23,7 @@ If you find this repository/work helpful in your research, welcome to cite our p
 ```bibtex
 @article{wen2026siamgm,
   title={{SiamGM: Siamese Geometry-Aware and Motion-Guided Network for Real-Time Satellite Video Object Tracking}},
-  author={Zixiao Wen and Zhen Yang and Jiawei Li and Xiantai Xiang and Guangyao Zhou and Yuxin Hu and Yuhan Liu},
+  author={Wen, Zixiao and Yang, Zhen and Li, Jiawei and Xiang, Xiantai and Zhou, Guangyao and Hu, Yuxin and Liu, Yuhan},
   journal={arXiv preprint arXiv:2603.07564},
   year={2026}
 }
