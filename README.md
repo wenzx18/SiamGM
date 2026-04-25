@@ -1,30 +1,13 @@
-# SiamGM: Siamese Geometry-Aware and Motion-Guided Network for Real-Time Satellite Video Object Tracking
-
-> SiamGM: Siamese Geometry-Aware and Motion-Guided Network for Real-Time Satellite Video Object Tracking
->
-> [https://arxiv.org/abs/2603.07564](https://arxiv.org/abs/2603.07564)
+# Geometric-Topological Perception and Motion Prior for Real-Time Satellite Video Object Tracking
 
 Codes comming soon!
 
 ## Abstract
 
-Single object tracking in satellite videos is inherently challenged by small target, blurred background, large aspect ratio changes, and frequent visual occlusions. These constraints often cause appearance-based trackers to accumulate errors and lose targets irreversibly. To systematically mitigate both spatial ambiguities and temporal information loss, we propose SiamGM, a novel geometry-aware and motion-guided Siamese network. From a spatial perspective, we introduce an Inter-Frame Graph Attention (IFGA) module, closely integrated with an Aspect Ratio-Constrained Label Assignment (LA) method, establishing fine-grained topological correspondences and explicitly preventing surrounding background noise. From a temporal perspective, we introduce the Motion Vector-Guided Online Tracking Optimization method. By adopting the Normalized Peak-to-Sidelobe Ratio (nPSR) as a dynamic confidence indicator, we propose an Online Motion Model Refinement (OMMR) strategy to utilize historical trajectory information. Evaluations on two challenging SatSOT and SV248S benchmarks confirm that SiamGM outperforms most state-of-the-art trackers in both precision and success metrics. Notably, the proposed components of SiamGM introduce virtually no computational overhead, enabling real-time tracking at 130 frames per second (FPS). Codes and tracking results are available at [https://github.com/wenzx18/SiamGM](https://github.com/wenzx18/SiamGM).
+Satellite video object tracking (SVOT) remains fundamentally challenging due to texture scarcity, arbitrary rotation, aspect ratio changes, and severe occlusions. While recent state-of-the-art trackers excel in general scenarios, their reliance on rich appearance details or rigid spatial matching mechanisms leads to significant performance degradation in the satellite domain. To bridge this gap, we propose SiamGM, a real-time spatial-temporal unified tracking framework tailored for satellite videos. Instead of conventionally stacking modules, we synergize geometric-topological perception with temporal-kinematic prior, addressing the core limitations of SVOT. Spatially, we closely couple a Topological Attention Module (TAM) with a Geometry-Constrained Label Assignment (GCLA) method during the training phase. This joint paradigm establishes fine-grained structural correspondences and explicitly suppresses surrounding background noise. Temporally, rather than passively relying on visual cues, we propose an Online Motion Model Refinement (OMMR) strategy during the tracking phase. By adopting the Normalized Peak-to-Sidelobe Ratio (nPSR) as a dynamic confidence indicator, we adaptively leverage historical motion information for robust track recovery. Evaluations on two challenging SatSOT and SV248S benchmarks confirm that SiamGM outperforms not only recent Siamese-based satellite trackers but also state-of-the-art Transformer trackers in both precision and success metrics. Notably, this highly unified architecture introduces only minor computational overhead, enabling real-time tracking at 130 frames per second (FPS). Codes and tracking results are available at [https://github.com/wenzx18/SiamGM](https://github.com/wenzx18/SiamGM).
 
 ![Overview of the proposed SiamGM](demo/overview.jpg)
 
 ## Results
 
 Results can be downloaded from: [Google Drive](https://drive.google.com/drive/folders/1wA-kQ_2gJe4dtK84B_VLtATMBdB7k74U?usp=drive_link)
-
-## Citation
-
-If you find this repository/work helpful in your research, welcome to cite our paper:
-
-```bibtex
-@article{wen2026siamgm,
-  title={{SiamGM: Siamese Geometry-Aware and Motion-Guided Network for Real-Time Satellite Video Object Tracking}},
-  author={Wen, Zixiao and Yang, Zhen and Li, Jiawei and Xiang, Xiantai and Zhou, Guangyao and Hu, Yuxin and Liu, Yuhan},
-  journal={arXiv preprint arXiv:2603.07564},
-  year={2026}
-}
-```
